@@ -601,6 +601,29 @@
 }
 .whatsapp-img:hover { transform: scale(1.02); }
 
+  .whatsapp-hidden {
+  display: none;
+  margin-top: 12px;
+}
+.whatsapp-hidden.visible {
+  display: grid;
+}
+.voir-plus-btn {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.voir-plus-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
   /* FAQ */
   .faq-list { display: flex; flex-direction: column; }
   .faq-item {
