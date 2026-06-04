@@ -1354,6 +1354,18 @@
     btn.textContent = 'Voir moins ↑';
   }
 }
+
+  function openPreview(src) {
+  const overlay = document.createElement('div');
+  overlay.classList.add('preview-overlay');
+  overlay.innerHTML = '<img src="' + src + '" alt="Aperçu document R-LAB">';
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('visible'));
+  overlay.addEventListener('click', () => {
+    overlay.classList.remove('visible');
+    setTimeout(() => overlay.remove(), 250);
+  });
+}
 </script>
 
 </body>
