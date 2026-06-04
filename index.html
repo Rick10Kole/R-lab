@@ -1321,6 +1321,18 @@
       }, 600);
     });
   }
+  function toggleProofs() {
+  const more = document.getElementById('more-proofs');
+  const btn = document.getElementById('voir-plus');
+  const isVisible = more.classList.contains('visible');
+  if (isVisible) {
+    more.classList.remove('visible');
+    btn.textContent = 'Voir plus de témoignages ↓';
+  } else {
+    more.classList.add('visible');
+    btn.textContent = 'Voir moins ↑';
+  }
+}
 </script>
 
 </body>
